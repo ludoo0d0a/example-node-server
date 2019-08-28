@@ -4,20 +4,22 @@
   "description": "Example Node Server w/ Babel",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel lib -d dist",
-    "start": "npm run build && nodemon dist/index.js",
+    "start": "nodemon --exec babel-node lib/index.js",
+    "dev": "babel-node lib/index.js",
+    "build": "babel lib -d dist --source-maps",
+    "start:cli": "npm run build && nodemon dist/index.js",
     "serve": "npm run build && node dist/index.js",
     "test": "npm run build && mocha --require @babel/register"
   },
   "author": "James Kyle <me@thejameskyle.com>",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.4.0",
-    "@babel/preset-env": "^7.4.2",
-    "@babel/register": "^7.4.0",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
     "mocha": "^5.2.0",
-    "nodemon": "^1.17.5"
+    "nodemon": "^1.19.1"
   }
 }

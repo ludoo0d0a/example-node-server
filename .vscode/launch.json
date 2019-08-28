@@ -7,16 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/lib/index.js",
-            "cwd": "${workspaceRoot}",
-            "outFiles": [
-                "${workspaceRoot}/dist/**.js"
-            ]
-        },{
-            "type": "node",
-            "request": "launch",
-            "name": "Debug sample with babel",
+            "name": "Debug with babel",
             "program": "${workspaceFolder}/lib/index.js",
             "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/babel-node",
             "runtimeArgs": [
