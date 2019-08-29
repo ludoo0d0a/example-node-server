@@ -1,11 +1,16 @@
 # Example Node Server w/ Babel
 
+### Debugging support
+
+Debug ES6 code in VSCode in now included.
+Refer to [Node.js debugging in VS Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging) for more information.
+
 ### Getting Started
 
-First we'll install `@babel/cli`, `@babel/core` and `@babel/preset-env`.
+First we'll install `@babel/cli`, `@babel/core`, `@babel/preset-env`and `@babel/node`.
 
 ```shell
-$ npm install --save-dev @babel/cli @babel/core @babel/preset-env
+$ npm install --save-dev @babel/cli @babel/core @babel/preset-env @babel/node
 ```
 
 Then we'll create a `.babelrc` file for configuring babel.
